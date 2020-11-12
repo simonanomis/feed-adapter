@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.4.0</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>programmer.personal</groupId>
+	<artifactId>feed-adapter</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>feed-adapter</name>
+	<description>Spring Boot Application for RSS Feed</description>
+
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<!--GraphQL and GraphiQL Spring Framework Boot Starters-->
+		<dependency>
+			<groupId>com.graphql-java-kickstart</groupId>
+			<artifactId>graphql-spring-boot-starter</artifactId>
+			<version>8.0.0</version>
+		</dependency>
+
+		<!-- to embed Altair tool -->
+		<dependency>
+			<groupId>com.graphql-java-kickstart</groupId>
+			<artifactId>altair-spring-boot-starter</artifactId>
+			<version>8.0.0</version>
+			<scope>runtime</scope>
+		</dependency>
+
+		<!-- to embed GraphiQL tool -->
+		<dependency>
+			<groupId>com.graphql-java-kickstart</groupId>
+			<artifactId>graphiql-spring-boot-starter</artifactId>
+			<version>8.0.0</version>
+			<scope>runtime</scope>
+		</dependency>
+
+		<!-- to embed Voyager tool -->
+		<dependency>
+			<groupId>com.graphql-java-kickstart</groupId>
+			<artifactId>voyager-spring-boot-starter</artifactId>
+			<version>8.0.0</version>
+			<scope>runtime</scope>
+		</dependency>
+
+		<!-- testing facilities -->
+		<dependency>
+			<groupId>com.graphql-java-kickstart</groupId>
+			<artifactId>graphql-spring-boot-starter-test</artifactId>
+			<version>8.0.0</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- set of Atom/RSS Java utilities  -->
+<!--		<dependency>-->
+<!--			<groupId>com.rometools</groupId>-->
+<!--			<artifactId>rome</artifactId>-->
+<!--			<version>1.15.0</version>-->
+<!--		</dependency>-->
+		<dependency>
+			<groupId>rome</groupId>
+			<artifactId>rome</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.5.2</version>
+		</dependency>
+	</dependencies>
+
+<!--	<repositories>-->
+<!--		<repository>-->
+<!--			<id>jcenter</id>-->
+<!--			<url>https://jcenter.bintray.com/</url>-->
+<!--		</repository>-->
+<!--	</repositories>-->
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
