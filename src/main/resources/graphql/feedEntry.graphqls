@@ -1,0 +1,18 @@
+type FeedEntry {
+    id: ID!
+    title: String!
+    author: String!
+    publicationDate: String!
+    url: String!
+    imageUrl: String!
+    feedEntryDescription: FeedEntryDescription!
+}
+
+type Query {
+    findAllFeedEntries: [FeedEntry]!
+    findAllFeedByTitle(title: String!) : [FeedEntry]
+}
+
+type Mutation {
+    newFeedEntry(title: String!, author: String!) : FeedEntry!
+}
