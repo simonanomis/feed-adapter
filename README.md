@@ -1,2 +1,2 @@
 # feed-adapter
-Spring Boot Application for RSS Feed 
+Spring boot API for RSS feed

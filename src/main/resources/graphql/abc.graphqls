@@ -1,0 +1,5 @@
+type Author {
+    id:
+    firstName: String!
+    lastName: String!
+}

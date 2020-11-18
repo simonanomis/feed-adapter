@@ -1,0 +1,18 @@
+type FeedEntryDescription {
+    id: ID!
+    type: String!
+    mode: String!
+    value: String!
+    feedEntry: FeedEntry!
+}
+
+extend type Query {
+    findAllFeedEntryDescriptions: [FeedEntryDescription]!
+
+}
+
+extend type Mutation {
+    newFeedEntryDescription(type: String!, mode: String!, value: String!, ) : FeedEntryDescription!
+    deleteFeedEntryDescription(id: ID!) : Boolean
+    updateValue(value: String!, id: ID!) : FeedEntryDescription!
+}
